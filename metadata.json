@@ -89,5 +89,18 @@
         "created_at": "2026-10-29T10:59:55.732Z",
         "updated_at": "2026-10-29T10:59:55.732Z",
         "type": "plugin"
+    },
+    {
+        "id": "4eF5F8g2X9e3-WKUaoIltqJm4-FtuQaa",
+        "plugin": "nutstore-sync",
+        "language": "zh-cn",
+        "version": "1.6.0",
+        "supported_versions": "1.6.0",
+        "title": "Nutstore Sync",
+        "description": "Nutstore Sync Localization & Tweaks",
+        "hash": "21192a8e21192a8e21192a8e21192a8e",
+        "created_at": "2026-10-29T11:00:03.878Z",
+        "updated_at": "2026-10-29T11:00:03.878Z",
+        "type": "plugin"
     }
 ]
