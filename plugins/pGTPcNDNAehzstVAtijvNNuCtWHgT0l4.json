@@ -1,0 +1,2946 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "mcp-tools-istefox",
+        "version": "1.0.0",
+        "title": "MCP Connector",
+        "description": "MCP Connector Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "3.2.2",
+        "author": "MuZhi"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "AssignmentExpression",
+                    "name": "nodeValue",
+                    "source": ", or auto-promoted\n            after 3 calls (Adaptive only). Active at connect time in both\n            Core and Adaptive.",
+                    "target": ", 或在 3 次调用后自动提升（仅自适应模式）。在核心模式和自适应模式下，连接时即生效。"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "nodeValue",
+                    "source": ", ",
+                    "target": ", "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "confirm",
+                    "source": "Switch \"${Ae}\" to Adaptive? Tools this client has never called would deactivate until you call activate_tool or promote them again: ${Bt}.",
+                    "target": "是否将 \"${Ae}\" 切换为自适应模式？此客户端从未调用过的工具将停用，直至您调用 activate_tool 或再次提升它们：${Bt}。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "confirm",
+                    "source": "Revoke \"${xt.label}\"? Every MCP client configured with it, including any .mcpb bundle generated for it, stops working. The token string is not recoverable — a client that needs access again has to be given a new token.",
+                    "target": "是否撤销 \"${xt.label}\"？所有配置了该工具的 MCP 客户端（包括为其生成的任何 .mcpb 包）都将停止工作。令牌字符串不可恢复——需要重新访问的客户端必须获得新的令牌。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "confirm",
+                    "source": "Keep this vault's broker route at the new vault location? Choose this only for a moved vault, not a copy",
+                    "target": "是否将此保险库的代理路由保留在新保险库位置？仅当保险库被移动时选择此项，而非复制。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "confirm",
+                    "source": "Delete the diagnostic log and its rotated files? This cannot be undone.",
+                    "target": "是否删除诊断日志及其轮转文件？此操作不可撤销。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to read the daily note template '${n}'",
+                    "target": "读取每日笔记模板 '${n}' 失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to create file: '${u}'",
+                    "target": "创建文件失败：'${u}'"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to create file: '${l}'",
+                    "target": "创建文件失败：'${l}'"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "ProgramManager",
+                    "target": "ProgramManager"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "An uncaught WebGPU validation error was raised: ${s.error.message}",
+                    "target": "发生了一个未捕获的 WebGPU 验证错误：${s.error.message}"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "An error occurred during model execution: \"${n}\".",
+                    "target": "模型执行期间发生错误：“${n}”。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Inputs given to model:",
+                    "target": "提供给模型的输入："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "an integer in the range Number.MIN_SAFE_INTEGER to Number.MAX_SAFE_INTEGER",
+                    "target": "一个介于 Number.MIN_SAFE_INTEGER 到 Number.MAX_SAFE_INTEGER 范围内的整数"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "a parsable date",
+                    "target": "一个可解析的日期"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "a URL string",
+                    "target": "一个 URL 字符串"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Smart Connections search failed",
+                    "target": "智能连接搜索失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[mcp-transport] reading the token list failed",
+                    "target": "[mcp-transport] 读取令牌列表失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[mcp-transport] request handler failed",
+                    "target": "[mcp-transport] 请求处理器失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error handling ${e.name}",
+                    "target": "处理 ${e.name} 时出错"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Folder-exclusion policy: could not read settings; retaining the last known policy. If no successful read has happened this session, every vault path is refused.",
+                    "target": "文件夹排除策略：无法读取设置；保留上次已知策略。如果本会话中尚未成功读取过，将拒绝所有保险库路径。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[mcp] modern-era handler failed",
+                    "target": "[mcp] 现代化时代处理器失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[mcp] transport.close failed",
+                    "target": "[mcp] 传输关闭失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[mcp] server.close failed",
+                    "target": "[mcp] 服务器关闭失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "MCP Connector failed to start HTTP server",
+                    "target": "MCP 连接器未能启动 HTTP 服务器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[mcpb] generation failed",
+                    "target": "[mcpb] 生成失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "live indexer: process failed",
+                    "target": "实时索引器：处理失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "live indexer: flush failed",
+                    "target": "实时索引器：刷新失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "low-power indexer: cycle failed",
+                    "target": "低功耗索引器：循环失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "semantic-search: indexer start failed",
+                    "target": "语义搜索：索引器启动失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "semantic-search: DLC rebuild failed",
+                    "target": "语义搜索：DLC 重建失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "semantic-search: DLC auto-subscribe failed",
+                    "target": "语义搜索：DLC 自动订阅失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Semantic search setup failed",
+                    "target": "语义搜索设置失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Prompts feature setup failed",
+                    "target": "提示功能设置失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "MCP transport setup failed",
+                    "target": "MCP 传输设置失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Semantic search wiring failed",
+                    "target": "语义搜索连接失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "No custom daily note settings found!",
+                    "target": "未找到自定义每日笔记设置！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "No custom weekly note settings found!",
+                    "target": "未找到自定义每周笔记设置！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "No custom monthly note settings found!",
+                    "target": "未找到自定义每月笔记设置！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "No custom quarterly note settings found!",
+                    "target": "未找到自定义季度笔记设置！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "No custom yearly note settings found!",
+                    "target": "未找到自定义的年度笔记设置！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "No model specified. Using default model: \"${t}\".",
+                    "target": "未指定模型。正在使用默认模型：\"${t}\"。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "No vocoder specified, using default HifiGan vocoder.",
+                    "target": "未指定声码器，正在使用默认的 HifiGan 声码器。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Claude Desktop config updated",
+                    "target": "Claude Desktop 配置已更新"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Claude Desktop config: removed plugin entries",
+                    "target": "Claude Desktop 配置：已移除插件条目"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Broker route registered",
+                    "target": "代理路由已注册"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Hosting the shared MCP broker",
+                    "target": "正在托管共享的 MCP 代理"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "The user aborted a request.",
+                    "target": "用户中止了请求。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "tool-toggle: filtered tools",
+                    "target": "工具切换：已过滤的工具"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "MCP Connector HTTP server listening",
+                    "target": "MCP 连接器 HTTP 服务器正在监听"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "MCP Connector HTTP server stopped",
+                    "target": "MCP 连接器 HTTP 服务器已停止"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "semantic-search: backend resolved",
+                    "target": "语义搜索：后端已解析"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "embedding store: migrating single-pair layout to segments",
+                    "target": "嵌入存储：正在将单对布局迁移到分段"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "semantic-search: v1 flat store migrated to per-provider directory",
+                    "target": "语义搜索：v1 平面存储已迁移到按提供程序划分的目录"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "semantic-search: chunker bound to provider",
+                    "target": "语义搜索：分块器已绑定到提供程序"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "live indexer: rebuildAll starting",
+                    "target": "实时索引器：开始 rebuildAll"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "live indexer: rebuildAll finished",
+                    "target": "实时索引器：rebuildAll 已完成"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "live indexer: flush completed",
+                    "target": "实时索引器：刷新已完成"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "semantic-search: started",
+                    "target": "语义搜索：已启动"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "MCP Tools Plugin loading",
+                    "target": "MCP 工具插件正在加载"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Smart Connections detected — `search_vault_smart` can use it",
+                    "target": "检测到智能连接 — `search_vault_smart` 可以使用它"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "MCP Tools Plugin loaded",
+                    "target": "MCP Tools 插件已加载"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "MCP Tools Plugin unloading",
+                    "target": "MCP Tools 插件正在卸载"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "removing requested execution provider \"${l}\" from session options because it is not available: ${o}",
+                    "target": "由于执行提供程序 \"${l}\" 不可用，正从会话选项中移除请求的执行提供程序：${o}"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "WebAssembly multi-threading is not supported in the current environment. Falling back to single-threading.",
+                    "target": "当前环境不支持 WebAssembly 多线程。将回退至单线程。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Unable to determine content-length from response headers. Will expand buffer when needed.",
+                    "target": "无法从响应头确定内容长度。将在需要时扩展缓冲区。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "An error occurred while opening the browser cache:",
+                    "target": "打开浏览器缓存时发生错误："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Unable to fetch file metadata for \"${s}\": ${o}",
+                    "target": "无法获取文件 \"${s}\" 的元数据：${o}"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Unable to add response to browser cache: ${l}.",
+                    "target": "无法将响应添加到浏览器缓存：${l}。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Failed to load ${t} from cache:",
+                    "target": "从缓存加载 ${t} 失败："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Failed to cache ${t}:",
+                    "target": "缓存 ${t} 失败："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Failed to read WASM binary:",
+                    "target": "读取 WASM 二进制文件失败："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Failed to read WASM factory:",
+                    "target": "读取 WASM 工厂失败："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Failed to pre-load WASM binary:",
+                    "target": "预加载 WASM 二进制文件失败："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Failed to pre-load WASM factory:",
+                    "target": "预加载 WASM 工厂失败："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "No sampling rate provided, using default of ${n.sampleRate}Hz.",
+                    "target": "未提供采样率，使用默认值 ${n.sampleRate}Hz。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "`label_ids_to_fuse` unset. No instance will be fused.",
+                    "target": "`label_ids_to_fuse` 未设置。不会融合任何实例。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "WebNN does not currently support dynamic shapes and requires 'free_dimension_overrides' to be set in config.json, preferably as a field within config[\"transformers.js_config\"][\"device_config\"][\"${a}\"]. When 'free_dimension_overrides' is not set, you may experience significant performance degradation.",
+                    "target": "WebNN 当前不支持动态形状，需要在 config.json 中设置 'free_dimension_overrides'，建议将其作为 config[\"transformers.js_config\"][\"device_config\"][\"${a}\"] 字段配置。若未设置 'free_dimension_overrides'，您可能会遇到显著的性能下降。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[resolve_model_type] Architecture(s) not found in MODEL_TYPE_MAPPING: [${n}] for model type '${e.model_type}'. Falling back to EncoderOnly (single model.onnx file). If you encounter issues, please report at: ${H6}",
+                    "target": "[resolve_model_type] MODEL_TYPE_MAPPING 中未找到架构：[${n}]（模型类型为 '${e.model_type}'）。回退至 EncoderOnly（单个 model.onnx 文件）。如遇问题，请反馈至：${H6}"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Unknown pattern type:",
+                    "target": "未知的模式类型："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Unknown tokenizer class \"${l}\", attempting to construct from base class.",
+                    "target": "未知的分词器类 \"${l}\"，尝试从基类构造。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Resampling method ${i} is not yet supported. Using bilinear instead.",
+                    "target": "重采样方法 ${i} 尚未支持，将使用双线性插值代替。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Image processor type '${n}' not found, assuming base ImageProcessor. Please report this at ${H6}.",
+                    "target": "未找到图像处理器类型 '${n}'，默认使用基础 ImageProcessor。请在 ${H6} 报告此问题。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Unknown model class \"${f}\", attempting to construct from base class.",
+                    "target": "未知的模型类 \"${f}\"，尝试从基类构造。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "`max_length` is ignored when `padding: true` and there is no truncation strategy. To pad to max length, use `padding: 'max_length'`.",
+                    "target": "当 `padding: true` 且未指定截断策略时，`max_length` 将被忽略。如需填充至最大长度，请使用 `padding: 'max_length'`。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation: true` to explicitly truncate examples to max length.",
+                    "target": "未显式启用截断，但 `max_length` 已指定具体值，请使用 `truncation: true` 显式截断样本至最大长度。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "WARNING: `MarianTokenizer` is not yet supported by Hugging Face's \"fast\" tokenizers library. Therefore, you may experience slightly inaccurate results.",
+                    "target": "警告：`MarianTokenizer` 尚未被 Hugging Face 的 \"fast\" 分词器库支持，因此您可能会遇到轻微的不准确结果。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Unsupported language code \"${n}\" detected, which may lead to unexpected behavior. Should be one of: ${JSON.stringify(this.supported_language_codes)}",
+                    "target": "检测到不受支持的语言代码 \"${n}\"，可能导致意外行为。应为以下之一：${JSON.stringify(this.supported_language_codes)}"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "WARNING: `XLMTokenizer` is not yet supported by Hugging Face's \"fast\" tokenizers library. Therefore, you may experience slightly inaccurate results.",
+                    "target": "警告：`XLMTokenizer` 尚未被 Hugging Face 的 \"fast\" 分词器库支持，因此您可能会遇到轻微的不准确结果。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Attempting to extract features for audio longer than 30 seconds. If using a pipeline to extract transcript from a long audio clip, remember to specify `chunk_length_s` and/or `stride_length_s`.",
+                    "target": "正在尝试为超过 30 秒的音频提取特征。如果使用 pipeline 从长音频片段中提取转录文本，请务必指定 `chunk_length_s` 和/或 `stride_length_s`。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "You are using PaliGemma without a text prefix. It will perform as a picture-captioning model.",
+                    "target": "您正在不使用文本前缀的情况下使用 PaliGemma，它将作为图像描述模型运行。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "You are passing both `text` and `images` to `PaliGemmaProcessor`. The processor expects special image tokens in the text, as many tokens as there are images per each text. It is recommended to add `<image>` tokens in the very beginning of your text. For this call, we will infer how many images each text has and add special tokens.",
+                    "target": "您正在向 `PaliGemmaProcessor` 同时传入 `text` 和 `images`。该处理器期望文本中包含特殊图像标记，且每个文本中的标记数量应与对应图像数量一致。建议在文本最开头添加 `<image>` 标记。本次调用中，我们将推断每个文本对应的图像数量并自动添加相应特殊标记。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Model type for '${y}' not found, assuming encoder-only architecture. Please report this at ${H6}.",
+                    "target": "未找到 '${y}' 的模型类型，假定为仅编码器架构。请在 ${H6} 处报告此问题。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Unable to fetch model file metadata for total progress tracking: ${E}",
+                    "target": "无法获取模型文件元数据以进行总进度跟踪：${E}"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "`do_sample` changed to false because `temperature: 0` implies greedy sampling (always selecting the most likely token), which is incompatible with `do_sample: true`.",
+                    "target": "`do_sample` 已更改为 false，因为 `temperature: 0` 意味着采用贪心采样（始终选择最可能的 token），这与 `do_sample: true` 不兼容。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "No language specified - defaulting to English (en).",
+                    "target": "未指定语言，默认使用英语（en）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "<|notimestamps|> prompt token is removed from generation_config since `return_timestamps` is set to `true`.",
+                    "target": "由于 `return_timestamps` 设置为 `true`，`<|notimestamps|>` 提示词已从 generation_config 中移除。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Token-level timestamps may not be reliable for task 'translate'.",
+                    "target": "对于任务 'translate'，词元级时间戳可能不可靠。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "`num_frames` has not been set, meaning the entire audio will be analyzed. This may lead to inaccurate token-level timestamps for short audios (< 30 seconds).",
+                    "target": "`num_frames` 未设置，因此将分析整个音频。这可能导致短音频（< 30 秒）的词元级时间戳不准确。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Model config has no `median_filter_width`, using default value of 7.",
+                    "target": "模型配置中无 `median_filter_width`，使用默认值 7。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Could not find 'entailment' in label2id mapping. Using 2 as entailment_id.",
+                    "target": "无法在 label2id 映射中找到 'entailment'。使用 2 作为 entailment_id。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Could not find 'contradiction' in label2id mapping. Using 0 as contradiction_id.",
+                    "target": "无法在 label2id 映射中找到 'contradiction'。使用 0 作为 contradiction_id。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "`language` parameter is not yet supported for `wav2vec2` models, defaulting to \"English\".",
+                    "target": "`language` 参数目前尚不支持 `wav2vec2` 模型，将默认使用 \"English\"。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "`task` parameter is not yet supported for `wav2vec2` models, defaulting to \"transcribe\".",
+                    "target": "`task` 参数目前尚不支持 `wav2vec2` 模型，将默认使用 \"transcribe\"。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "%c[svelte] derived_inert\n%cReading a derived belonging to a now-destroyed effect may result in stale values\nhttps://svelte.dev/e/derived_inert",
+                    "target": "%c[svelte] derived_inert\n%c读取属于已销毁 effect 的派生值可能导致陈旧值\nhttps://svelte.dev/e/derived_inert"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "%c[svelte] lifecycle_double_unmount\n%cTried to unmount a component that was not mounted\nhttps://svelte.dev/e/lifecycle_double_unmount",
+                    "target": "%c[svelte] lifecycle_double_unmount\n%c尝试卸载一个未挂载的组件\nhttps://svelte.dev/e/lifecycle_double_unmount"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "%c[svelte] select_multiple_invalid_value\n%cThe `value` property of a `<select multiple>` element should be an array, but it received a non-array value. The selection will be kept as is.\nhttps://svelte.dev/e/select_multiple_invalid_value",
+                    "target": "%c[svelte] select_multiple_invalid_value\n%c`<select multiple>` 元素的 `value` 属性应为数组，但接收到非数组值。选择将保持原样。\nhttps://svelte.dev/e/select_multiple_invalid_value"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "%c[svelte] state_proxy_unmount\n%cTried to unmount a state proxy, rather than a component\nhttps://svelte.dev/e/state_proxy_unmount",
+                    "target": "%c[svelte] state_proxy_unmount\n%c尝试卸载一个状态代理，而非组件\nhttps://svelte.dev/e/state_proxy_unmount"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "%c[svelte] svelte_boundary_reset_noop\n%cA `<svelte:boundary>` `reset` function only resets the boundary the first time it is called\nhttps://svelte.dev/e/svelte_boundary_reset_noop",
+                    "target": "%c[svelte] svelte_boundary_reset_noop\n%c`<svelte:boundary>` 的 `reset` 函数仅在首次调用时重置边界\nhttps://svelte.dev/e/svelte_boundary_reset_noop"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Failed to hydrate: ",
+                    "target": "水合失败： "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Multiple @ark registries detected. This can lead to unexpected behavior.",
+                    "target": "检测到多个 @ark 注册表。这可能导致意外行为。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "File ${i} was initialized multiple times, likely due to being imported from both CJS and ESM contexts.",
+                    "target": "文件 ${i} 被多次初始化，原因可能是同时从 CJS 和 ESM 上下文中导入。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "settings slice \"${e}\" invalid, using defaults",
+                    "target": "设置切片 \"${e}\" 无效，正在使用默认值"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Claude Desktop config backup failed",
+                    "target": "Claude Desktop 配置备份失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Failed to remove config lock",
+                    "target": "无法移除配置锁"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Broker connection recovery failed",
+                    "target": "代理连接恢复失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Broker route failed to start",
+                    "target": "代理路由启动失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[adaptive] debounced flush failed",
+                    "target": "[自适应] 去抖动刷新失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[adaptive] onToolsPromoted listener threw",
+                    "target": "[自适应] onToolsPromoted 监听器抛出异常"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "isUserIgnored unavailable — `Files & Links → Excluded files` filtering disabled for this session. If you see this in production, the Obsidian runtime API may have changed.",
+                    "target": "isUserIgnored 不可用 — 本会话中已禁用“文件与链接 → 排除的文件”过滤功能。若在生产环境中看到此提示，可能 Obsidian 运行时 API 已发生变更。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "find_broken_links: no cache for file, skipping",
+                    "target": "find_broken_links：文件无缓存，跳过"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "find_orphaned_notes: file has no stat, skipping",
+                    "target": "find_orphaned_notes：文件无 stat 信息，跳过"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "search_and_replace: invalid regex",
+                    "target": "search_and_replace：正则表达式无效"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "list_bookmarks: unrecognized bookmark type, skipping",
+                    "target": "list_bookmarks：无法识别的书签类型，跳过"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[mcp-sdk] Your zod version does not implement `~standard.jsonSchema` (added in zod 4.2.0). Falling back to z.toJSONSchema(). Upgrade to zod >=4.2.0 to silence this warning.",
+                    "target": "[mcp-sdk] 您的 zod 版本未实现 `~standard.jsonSchema`（zod 4.2.0 中添加）。回退至 z.toJSONSchema()。请升级至 zod >=4.2.0 以消除此警告。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Tool name validation warning for \"${e}\":",
+                    "target": "工具名称验证警告：“${e}”："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Tool registration will proceed, but this may cause compatibility issues.",
+                    "target": "工具注册将继续进行，但可能导致兼容性问题。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Consider updating the tool name to conform to the MCP tool naming standard.",
+                    "target": "建议更新工具名称以符合 MCP 工具命名标准。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "See SEP: Specify Format for Tool Names (https://github.com/modelcontextprotocol/modelcontextprotocol/issues/986) for more details.",
+                    "target": "详情请参阅 SEP：指定工具名称格式（https://github.com/modelcontextprotocol/modelcontextprotocol/issues/986）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[mcp-sdk] tool '${e}' carries an invalid x-mcp-header declaration and will be excluded by conforming Streamable HTTP clients: ${n.reason}",
+                    "target": "[mcp-sdk] 工具 '${e}' 携带无效的 x-mcp-header 声明，符合规范的 Streamable HTTP 客户端将排除该工具：${n.reason}"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "responseMode: 'json' drops mid-call notifications. subscriptions/listen streams are always served over SSE regardless; other notifications emitted before a result are dropped.",
+                    "target": "responseMode: 'json' 会丢弃通话中途的通知。subscriptions/listen 流始终通过 SSE 提供；其他在结果返回前发出的通知会被丢弃。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "configured mcp port is invalid, using default range",
+                    "target": "配置的 MCP 端口无效，正在使用默认范围"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "MCP Connector HTTP server port busy",
+                    "target": "MCP 连接器 HTTP 服务器端口已被占用"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Folder-exclusion policy: settings readable again, policy refreshed.",
+                    "target": "文件夹排除策略：设置再次可读，策略已刷新。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "tool-toggle: loadData failed; skipping filter",
+                    "target": "工具切换：loadData 失败；跳过筛选"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "tool-toggle: `disabled` is not an array; ignoring",
+                    "target": "工具切换：`disabled` 不是数组；忽略"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "tool-toggle: unknown tool names in disabled list",
+                    "target": "工具切换：禁用列表中存在未知的工具名称"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[mcp] recordCall failed",
+                    "target": "[mcp] recordCall 失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[mcp] modern-era request rejected",
+                    "target": "[mcp] 拒绝现代版请求"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[mcp] flushing pending counters on teardown failed",
+                    "target": "[mcp] 清空待处理计数器时在拆卸阶段失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[mcp] closing the modern-era handler on teardown failed",
+                    "target": "[mcp] 关闭现代时代处理器时拆解失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[mcp] pruning policy after a revoke failed",
+                    "target": "[mcp] 撤销后清理策略失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "autoWrite: getAutoWriteEnabled failed",
+                    "target": "autoWrite: 获取 autoWriteEnabled 状态失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "autoWrite: could not read the token list",
+                    "target": "autoWrite: 无法读取令牌列表"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[copy-config] after-copy step failed",
+                    "target": "[copy-config] 复制后步骤失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "prompts: list-changed comparison failed",
+                    "target": "prompts: 列表变更比较失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "onnxEnv: expected WASM backend shape not found — CDN paths not configured",
+                    "target": "onnxEnv: 未找到预期的 WASM 后端形状 — CDN 路径未配置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "semantic-search: pipeline dispose failed",
+                    "target": "semantic-search: 流水线释放失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "embedding store was mid-write, discarding and rebuilding",
+                    "target": "嵌入存储正处于写入中，丢弃并重建"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "embedding index unreadable, starting fresh",
+                    "target": "嵌入索引不可读，重新开始构建"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "embedding index format version mismatch, re-indexing",
+                    "target": "嵌入索引格式版本不匹配，正在重新索引"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "embedding index vector revision mismatch, re-indexing",
+                    "target": "嵌入索引向量修订版本不匹配，正在重新索引"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "embedding record out of bounds, skipping",
+                    "target": "嵌入记录超出边界，已跳过"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "could not remove superseded store file",
+                    "target": "无法删除被取代的存储文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "mtimes sidecar unreadable, ignoring",
+                    "target": "mtimes 辅助文件不可读，已忽略"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "could not remove embedding store sentinel",
+                    "target": "无法删除嵌入存储标记文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "v1 flat store migration failed; store will be re-indexed",
+                    "target": "v1 平铺存储迁移失败；存储将被重新索引"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "live indexer: embedding provider not available, skipping rebuild",
+                    "target": "实时索引器：嵌入提供程序不可用，跳过重建"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "low-power indexer: embedding provider not available, skipping rebuild",
+                    "target": "低功耗索引器：嵌入提供程序不可用，跳过重建"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "live indexer: read failed but path still in vault",
+                    "target": "实时索引器：读取失败，但路径仍在保险库中"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "semantic-search: DLC indexer stop failed",
+                    "target": "语义搜索：DLC 索引器停止失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "semantic-search: provider unload failed",
+                    "target": "语义搜索：提供程序卸载失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "semantic-search: failed to wipe stale index directory",
+                    "target": "语义搜索：无法清除过时的索引目录"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "semantic-search: teardown of a late wiring failed",
+                    "target": "语义搜索：延迟依赖注入的清理失败"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to read the daily note template",
+                    "target": "读取每日笔记模板失败"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Unable to create new file.",
+                    "target": "无法创建新文件。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "MCP Connector: ${q}",
+                    "target": "MCP 连接器：${q}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to save command permissions: ${rt}",
+                    "target": "保存命令权限失败：${rt}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No '${kt.label}' commands were found in this vault's registry.",
+                    "target": "在此仓库注册表中未找到 '${kt.label}' 命令。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "All '${kt.label}' commands are already in the allowlist.",
+                    "target": "所有 '${kt.label}' 命令都已在允许列表中。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Added ${Vr} '${kt.label}' command${Vr===1?\"\":\"s\"} to the allowlist.",
+                    "target": "已将 ${Vr} 个‘${kt.label}’命令${Vr===1?"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Copied ${w(u).length} command id${w(u).length===1?\"\":\"s\"} to clipboard.",
+                    "target": "已将 ${w(u).length} 个命令 ID${w(u).length===1?"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Could not access the Obsidian command registry.",
+                    "target": "无法访问 Obsidian 命令注册表。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Refreshed registry: ${w(m).length} commands found.",
+                    "target": "已刷新注册表：共找到 ${w(m).length} 个命令。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Removed ${kt} stale command id${kt===1?\"\":\"s\"} from the allowlist.",
+                    "target": "已从白名单中移除 ${kt} 个过时的命令 ID${kt===1?"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Replaced allowlist with ${kt.length} command id${kt.length===1?\"\":\"s\"}.",
+                    "target": "已使用 ${kt.length} 个命令 ID${kt.length===1?"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "${Rc} index is ready.",
+                    "target": "${Rc} 索引已就绪。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Rebuild not available yet — reload Obsidian.",
+                    "target": "重建功能暂不可用——请重新加载 Obsidian。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Semantic index not available yet — reload Obsidian.",
+                    "target": "语义索引暂不可用——请重新加载 Obsidian。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Rebuilding index in background…",
+                    "target": "正在后台重建索引……"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Smart Connections manages its own index.",
+                    "target": "智能连接管理其自身的索引。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Semantic index rebuilt.",
+                    "target": "语义索引已重建。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Rebuild failed: ${os}",
+                    "target": "重建失败：${os}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to read tool loading settings: ${os}",
+                    "target": "读取工具加载设置失败：${os}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to save tool loading settings: ${jt}",
+                    "target": "保存工具加载设置失败：${jt}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to save tool loading settings: ${mr}",
+                    "target": "保存工具加载设置失败：${mr}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "\"${Ae}\" switched to Adaptive. ${tn.length} tool${tn.length===1?\"\":\"s\"} deactivated — call activate_tool from chat, or add it back under Promoted tools, to bring one back.",
+                    "target": "“${Ae}”已切换为自适应模式。${tn.length} 个工具${tn.length===1?\"\":\"s\"} 已停用——可通过聊天调用 activate_tool，或在“推荐工具”下重新添加，以恢复使用。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Adaptive tool data reset.",
+                    "target": "自适应工具数据已重置。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to reset adaptive tool data: ${Ke}",
+                    "target": "重置自适应工具数据失败：${Ke}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Removed ${lo} note${lo>1?\"s\":\"\"} from the semantic search index.",
+                    "target": "已从语义搜索索引中移除 ${lo} 条笔记${lo>1?\"s\":\"\"}。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Hidden folders saved, but the semantic search index could not be purged: ${bs}. Rebuild it from Semantic Search settings.",
+                    "target": "已保存隐藏文件夹，但无法清除语义搜索索引：${bs}。请在语义搜索设置中重建它。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to save hidden folders: ${ws}",
+                    "target": "保存隐藏文件夹失败：${ws}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to save hidden folders: ${lo}",
+                    "target": "保存隐藏文件夹失败：${lo}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to save MCP Tools settings: ${en}",
+                    "target": "保存 MCP 工具设置失败：${en}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "MCP Connector: \"${u}\" promoted to active",
+                    "target": "MCP 连接器：“${u}”已提升为活动状态"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Node.js ${mt.version} installed via Homebrew.",
+                    "target": "已通过 Homebrew 安装 Node.js ${mt.version}。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Homebrew install failed: ${mt.error}",
+                    "target": "Homebrew 安装失败：${mt.error}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Homebrew install failed: ${Mt}",
+                    "target": "Homebrew 安装失败：${Mt}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "mcp-remote pre-warmed.",
+                    "target": "mcp-remote 已预热。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Pre-warm failed: ${mt.error}",
+                    "target": "预热失败：${mt.error}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Copy failed: ${me}",
+                    "target": "复制失败：${me}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Copy failed: ${J}",
+                    "target": "复制失败：${J}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Export ${OE} with this token before starting Claude Code. It asks you to approve a project .mcp.json once.",
+                    "target": "请在启动 Claude Code 前使用此令牌导出 ${OE}。它会要求您批准一次项目 .mcp.json。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to generate .mcpb: ${ge}",
+                    "target": "生成 .mcpb 失败：${ge}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "The Codex entry '${w(r)}' in ${T.configPath} is already up to date.",
+                    "target": "Codex 条目 '${w(r)}' 在 ${T.configPath} 中已是最新版本。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to save tool loading settings: ${g}",
+                    "target": "保存工具加载设置失败：${g}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Token \"${xt.label}\" revoked, but a managed client entry could not be removed: ${an.error}",
+                    "target": "令牌 \"${xt.label}\" 已撤销，但无法移除托管客户端条目：${an.error}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "MCP Connector: failed to restart — ${an.error}",
+                    "target": "MCP 连接器：重启失败 — ${an.error}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "MCP Connector: failed to save port — ${Wt}",
+                    "target": "MCP 连接器：保存端口失败 — ${Wt}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "MCP Connector: failed to restart — ${Wt.error}",
+                    "target": "MCP 连接器：重启失败 — ${Wt.error}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Server name saved.",
+                    "target": "服务器名称已保存。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "MCP Connector: failed to save server name — ${Wt}",
+                    "target": "MCP 连接器：保存服务器名称失败 — ${Wt}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Claude Desktop config sync disabled.",
+                    "target": "Claude Desktop 配置同步已禁用。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Sync enabled, but the MCP transport is not running yet.",
+                    "target": "同步已启用，但 MCP 传输尚未运行。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Sync enabled, but this vault's location change has to be resolved first.",
+                    "target": "同步已启用，但此保险库的位置变更需先解决。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Sync enabled, but the write failed: ${an.error}",
+                    "target": "同步已启用，但写入失败：${an.error}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Sync enabled.",
+                    "target": "同步已启用。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "MCP Connector: The broker route starts once the MCP transport runs on a port other than ${Ow}",
+                    "target": "MCP 连接器：代理路由将在 MCP 传输在非 ${Ow} 端口上运行后启动。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "This vault is now independent. ${an.join(\". \")}",
+                    "target": "此保险库现为独立状态。${an.join(\". \")}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Copy failed: ${cn}",
+                    "target": "复制失败：${cn}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to save the log level: ${D}",
+                    "target": "保存日志级别失败：${D}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "The diagnostic log is at ${s}",
+                    "target": "诊断日志位于 ${s}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Copied the last 200 log lines to the clipboard.",
+                    "target": "已将最近 200 行日志复制到剪贴板。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to copy the log: ${E}",
+                    "target": "复制日志失败：${E}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Diagnostic log cleared.",
+                    "target": "诊断日志已清空。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to clear the log: ${E}",
+                    "target": "清空日志失败：${E}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "MCP Tools: Semantic search index format upgraded (${z} provider${z>1?\"s\":\"\"} migrated). Rebuilding automatically.",
+                    "target": "MCP 工具：语义搜索索引格式已升级（${z} 个提供程序${z>1?\"已\":\"\"}迁移）。正在自动重建。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "MCP Connector: This vault's fixed port ${Ow} is reserved for the shared broker, so client configs that use the broker cannot connect to any open vault. Change the fixed port in Access Control",
+                    "target": "MCP 连接器：此保险库的固定端口 ${Ow} 已保留给共享代理，因此使用该代理的客户端配置无法连接到任何打开的保险库。请在访问控制中更改固定端口"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "MCP Connector: ${e.error}",
+                    "target": "MCP 连接器：${e.error}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actual",
+                    "source": "aborted due to error:\n    ${s}\n",
+                    "target": "因错误而中止：\n    ${s}\n"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actual",
+                    "source": "empty",
+                    "target": "empty"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "code",
+                    "source": "predicate",
+                    "target": "predicate"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "code",
+                    "source": "union",
+                    "target": "union"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "string",
+                    "target": "string"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "an integer string representing a safe Unix timestamp",
+                    "target": "一个表示安全 Unix 时间戳的整数字符串"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Common text-formatting and list commands",
+                    "target": "常用文本格式化和列表命令"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Pane splits, tab navigation, graph view",
+                    "target": "窗格分割、标签页导航、图视图"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Quick switcher, global search, file reveal",
+                    "target": "快速切换器、全局搜索、文件定位"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Ranked list view for search_vault_smart and search_vault_simple",
+                    "target": "用于 search_vault_smart 和 search_vault_simple 的排序列表视图"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Access your Obsidian vault (semantic search, notes, Templater prompts) via MCP.",
+                    "target": "通过 MCP 访问您的 Obsidian 仓库（语义搜索、笔记、Templater 提示）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "The project path cannot contain a single quote or a line break.",
+                    "target": "项目路径不能包含单引号或换行符。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "The project path cannot contain [, ], * or ?.",
+                    "target": "项目路径不能包含 [、]、* 或 ?。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "The project path must be absolute, such as /home/me/project or C:\\Projects\\app.",
+                    "target": "项目路径必须为绝对路径，例如 /home/me/project 或 C:\\Projects\\app。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "File is binary and not supported by get_vault_files: ${a.path}. Use get_vault_file to read it individually.",
+                    "target": "文件为二进制格式，get_vault_files 不支持：${a.path}。请使用 get_vault_file 单独读取。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Backlinker file disappeared between plan and apply.",
+                    "target": "反向链接器文件在 plan 和 apply 之间消失。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "File changed between plan and apply; left untouched to avoid overwriting a concurrent edit. Re-run the rename.",
+                    "target": "文件在 plan 和 apply 之间被修改；为避免覆盖并发编辑，该文件保持不变。请重新运行重命名操作。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "False boolean schema.",
+                    "target": "布尔模式为 false。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "A subschema had errors.",
+                    "target": "子模式存在错误。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Instance does not match ${JSON.stringify(m)}.",
+                    "target": "实例不匹配 ${JSON.stringify(m)}。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Instance does not match any of ${JSON.stringify(g)}.",
+                    "target": "实例不匹配 ${JSON.stringify(g)} 中的任意一个。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Instance matched \"not\" schema.",
+                    "target": "实例不匹配“not”模式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Instance does not match any subschemas.",
+                    "target": "实例不匹配任何子模式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Instance does not match every subschema.",
+                    "target": "实例不匹配所有子模式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Instance does not match exactly one subschema (${kt} matches).",
+                    "target": "实例不匹配恰好一个子模式（${kt} 个匹配）。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Instance does not match \"then\" schema.",
+                    "target": "实例不匹配“then”模式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Instance does not match \"else\" schema.",
+                    "target": "实例不匹配“else”模式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Instance does not have required property \"${rt}\".",
+                    "target": "实例缺少必需属性 \"${rt}\"。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Instance does not have at least ${Se} properties.",
+                    "target": "实例的属性数量少于 ${Se} 个。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Instance does not have at least ${q} properties.",
+                    "target": "实例的属性数量少于 ${q} 个。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Property name \"${Ft}\" does not match schema.",
+                    "target": "属性名 \"${Ft}\" 不匹配模式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Instance has \"${rt}\" but does not match dependant schema.",
+                    "target": "实例具有 \"${rt}\"，但不匹配依赖架构。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Instance has \"${Ft}\" but does not match dependant schema.",
+                    "target": "实例具有 \"${Ft}\"，但不匹配依赖架构。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Property \"${Ft}\" does not match schema.",
+                    "target": "属性 \"${Ft}\" 不匹配架构。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Property \"${vs}\" matches pattern \"${Ft}\" but does not match associated schema.",
+                    "target": "属性 \"${vs}\" 匹配模式 \"${Ft}\"，但不匹配关联架构。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Property \"${Ft}\" does not match additional properties schema.",
+                    "target": "属性 \"${Ft}\" 不匹配附加属性架构。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Property \"${Ft}\" does not match unevaluated properties schema.",
+                    "target": "属性 \"${Ft}\" 不匹配未评估属性架构。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Items did not match schema.",
+                    "target": "项不匹配架构。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Items did not match additional items schema.",
+                    "target": "项不匹配附加项架构。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Array is empty. It must contain at least one item matching the schema.",
+                    "target": "数组为空。它必须至少包含一个匹配架构的项。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Array does not contain item matching schema.",
+                    "target": "数组不包含匹配架构的项。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Array must contain at least ${Rt} items matching schema. Only ${Vr} items were found.",
+                    "target": "数组必须至少包含 ${Rt} 个符合模式的项。仅找到 ${Vr} 个项。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Array may contain at most ${mt} items matching schema. ${Vr} items were found.",
+                    "target": "数组最多可包含 ${mt} 个符合模式的项。已找到 ${Vr} 个项。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Items did not match unevaluated items schema.",
+                    "target": "项不符合未评估项模式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Duplicate items at indexes ${rt} and ${sn}.",
+                    "target": "索引 ${rt} 和 ${sn} 处的项重复。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "${e} is less than ${st?\"or equal to \":\"\"} ${Xt}.",
+                    "target": "${e} 小于 ${st?\"或等于 \":\"\"} ${Xt}。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "${e} is greater than ${Ke?\"or equal to \":\"\"} ${En}.",
+                    "target": "${e} 大于 ${Ke?\"或等于 \":\"\"} ${En}。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "${e} is less than ${Xt}.",
+                    "target": "${e} 小于 ${Xt}。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "${e} is greater than ${En}.",
+                    "target": "${e} 大于 ${En}。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "${e} is less than ${st}.",
+                    "target": "${e} 小于 ${st}。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "${e} is greater than or equal to ${Ke}.",
+                    "target": "${e} 大于或等于 ${Ke}。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "${e} is not a multiple of ${jt}.",
+                    "target": "${e} 不是 ${jt} 的整数倍。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "String does not match pattern.",
+                    "target": "字符串不匹配指定模式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "String does not match format \"${D}\".",
+                    "target": "字符串不匹配格式 \"${D}\"。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "The plugin was unloaded",
+                    "target": "插件已卸载"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Port must be a whole number between 1024 and 65535.",
+                    "target": "端口必须是 1024 到 65535 之间的整数。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Port ${Ow} is reserved for the shared MCP broker. Choose another port or leave the field blank.",
+                    "target": "端口 ${Ow} 已被共享 MCP 代理保留。请选择其他端口，或留空该字段。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Homebrew install completed but `node --version` still failed. You may need to restart Obsidian to pick up PATH changes.",
+                    "target": "Homebrew 安装已完成，但 `node --version` 仍失败。您可能需要重启 Obsidian 以应用 PATH 变更。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "npx not available — install Node.js from nodejs.org first.",
+                    "target": "npx 不可用 — 请先从 nodejs.org 安装 Node.js。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "expected",
+                    "source": "removed",
+                    "target": "已移除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "hint",
+                    "source": "This file's text content exceeds the ${u}-byte cap (Settings → MCP Connector → \"Max text output size\"). Use get_vault_file_partial with mode \"lines\", \"heading\", or \"block\" to read a specific range, or raise the cap in settings.",
+                    "target": "此文件的文本内容超出了 ${u} 字节限制（设置 → MCP 连接器 → “最大文本输出大小”）。请使用 get_vault_file_partial 并指定 mode 为 \"lines\"、\"heading\" 或 \"block\" 来读取特定范围，或在设置中提高该限制。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "hint",
+                    "source": "This file is binary (video, PDF, Office document, or archive) and cannot be returned as text content. Use show_file_in_obsidian to open it in the Obsidian UI.",
+                    "target": "此文件为二进制文件（视频、PDF、Office 文档或归档文件），无法以文本内容形式返回。请使用 show_file_in_obsidian 在 Obsidian UI 中打开它。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "hint",
+                    "source": "This file is too large to be returned inline (exceeds the 10 MiB cap to avoid overflowing the MCP client context window). Use show_file_in_obsidian to open it in the Obsidian UI.",
+                    "target": "此文件过大，无法以内联方式返回（超出 10 MiB 限制，以避免溢出 MCP 客户端上下文窗口）。请使用 show_file_in_obsidian 在 Obsidian UI 中打开它。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Editing",
+                    "target": "编辑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Navigation",
+                    "target": "导航"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Search",
+                    "target": "搜索"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "EmbeddingGemma 300M",
+                    "target": "EmbeddingGemma 300M"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Multilingual E5 base",
+                    "target": "多语言 E5 base"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "MiniLM",
+                    "target": "MiniLM"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Vault location changed. Confirm a move or make this copy independent",
+                    "target": "保险库位置已更改。请确认移动操作，或将该副本设为独立副本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Heading \"${e.to}\" is already the current heading text (line ${r.line+1}, level ${r.level}). No-op rename.",
+                    "target": "标题 \"${e.to}\" 已是当前标题文本（第 ${r.line+1} 行，级别 ${r.level}）。重命名操作无效。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Invalid regex: ${n instanceof Error?n.message:String(n)}",
+                    "target": "正则表达式无效：${n instanceof Error?n.message:String(n)}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Pattern contains nested quantifiers (ReDoS risk). Simplify the pattern.",
+                    "target": "模式包含嵌套量词（存在 ReDoS 风险），请简化该模式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "string",
+                    "target": "string"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Template executed and file created successfully",
+                    "target": "模板执行成功，文件已创建"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Template executed without creating a file",
+                    "target": "模板执行完成，但未创建文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Invalid Base64 string",
+                    "target": "无效的 Base64 字符串"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "URL must be parseable",
+                    "target": "URL 必须可解析"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "URL cannot use javascript:, data:, or vbscript: scheme",
+                    "target": "URL 不能使用 javascript:、data: 或 vbscript: 协议"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "content is required when the body carries '${xv}' — another result family cannot default into an empty tools/call success",
+                    "target": "当请求体携带 '${xv}' 时，content 为必填项 — 其他结果类型无法默认为空工具调用成功"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Bad Request: the request headers and body disagree: ${r}",
+                    "target": "错误请求：请求头与请求体不一致：${r}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Method not allowed.",
+                    "target": "方法不允许。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Internal server error",
+                    "target": "内部服务器错误"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "pack",
+                    "target": "pack"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Reshape (packed)",
+                    "target": "重塑（打包）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "unpack",
+                    "target": "unpack"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "BatchNormalization",
+                    "target": "批量归一化"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Concat (packed)",
+                    "target": "拼接（打包）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Concat",
+                    "target": "拼接"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "GroupedConv",
+                    "target": "分组卷积"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Im2Col (packed)",
+                    "target": "图像转列（打包）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "MatMul",
+                    "target": "MatMul"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "MatMul (packed)",
+                    "target": "MatMul（已打包）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "ConvDotProduct",
+                    "target": "ConvDotProduct"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "ConvTranspose",
+                    "target": "ConvTranspose"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Transpose",
+                    "target": "Transpose"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Gather",
+                    "target": "Gather"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Gemm",
+                    "target": "Gemm"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "alpha",
+                    "target": "alpha"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "beta",
+                    "target": "beta"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "ImageScaler",
+                    "target": "ImageScaler"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "bias",
+                    "target": "bias"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "scale",
+                    "target": "scale"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "epsilon",
+                    "target": "epsilon"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "LRN",
+                    "target": "LRN"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Pad",
+                    "target": "Pad"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "AveragePool",
+                    "target": "AveragePool"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "GlobalAveragePool",
+                    "target": "GlobalAveragePool"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "MaxPool",
+                    "target": "MaxPool"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "GlobalMaxPool",
+                    "target": "GlobalMaxPool"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Upsample",
+                    "target": "Upsample"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "scales",
+                    "target": "scales"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Resize",
+                    "target": "调整大小"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Slice",
+                    "target": "切片"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "SoftmaxComputeMax",
+                    "target": "SoftmaxComputeMax"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "SoftmaxComputeScale",
+                    "target": "SoftmaxComputeScale"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "SoftMax",
+                    "target": "SoftMax"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Split",
+                    "target": "分割"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Sum",
+                    "target": "求和"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Tile",
+                    "target": "平铺"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "TransposeCopy",
+                    "target": "转置复制"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "TransposeShared",
+                    "target": "TransposeShared"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "AttentionProbsSoftmax",
+                    "target": "AttentionProbsSoftmax"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "AttentionProbs",
+                    "target": "AttentionProbs"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "AttentionScore",
+                    "target": "AttentionScore"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "ldb",
+                    "target": "ldb"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "AttentionPrepare",
+                    "target": "AttentionPrepare"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "BiasAdd",
+                    "target": "BiasAdd"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "min",
+                    "target": "min"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "max",
+                    "target": "max"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "BiasSplitGelu",
+                    "target": "BiasSplitGelu"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "MatMulNaive",
+                    "target": "MatMulNaive"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "pad",
+                    "target": "pad"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "stride",
+                    "target": "stride"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "dilation",
+                    "target": "dilation"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "pads",
+                    "target": "pads"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "strides",
+                    "target": "strides"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "dilations",
+                    "target": "dilations"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "CumSum",
+                    "target": "CumSum"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "DepthToSpace",
+                    "target": "DepthToSpace"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Einsum",
+                    "target": "Einsum"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Expand",
+                    "target": "展开"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "FastGeluWithBias",
+                    "target": "FastGeluWithBias"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "GatherND",
+                    "target": "GatherND"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "GatherBlockQuantized",
+                    "target": "GatherBlockQuantized"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "GatherElements",
+                    "target": "GatherElements"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "GemmShared",
+                    "target": "GemmShared"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "GridSample",
+                    "target": "GridSample"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "MultiHeadAttentionAddBias",
+                    "target": "MultiHeadAttentionAddBias"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "RotaryEmbedding",
+                    "target": "RotaryEmbedding"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "GeneratePositionIds",
+                    "target": "GeneratePositionIds"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "InstanceNormComputeChannelScaleShift",
+                    "target": "InstanceNormComputeChannelScaleShift"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "InstanceNormalization",
+                    "target": "InstanceNormalization"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "InstanceNormalizationNHWC",
+                    "target": "InstanceNormalizationNHWC"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "LayerNormalization",
+                    "target": "LayerNormalization"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "MatMulNBits",
+                    "target": "MatMulNBits"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "kw",
+                    "target": "kw"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "sw",
+                    "target": "sw"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "kh",
+                    "target": "kh"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "sh",
+                    "target": "sh"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "axis",
+                    "target": "axis"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "DequantizeLinear",
+                    "target": "DequantizeLinear"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "start",
+                    "target": "start"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "delta",
+                    "target": "delta"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Range",
+                    "target": "Range"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "ScatterND",
+                    "target": "ScatterND"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "components",
+                    "target": "components"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "SkipLayerNormalization",
+                    "target": "SkipLayerNormalization"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "starts",
+                    "target": "starts"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "signs",
+                    "target": "signs"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "steps",
+                    "target": "steps"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Softmax",
+                    "target": "Softmax"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Where",
+                    "target": "Where"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "webnn",
+                    "target": "webnn"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Smart Connections",
+                    "target": "智能连接"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "string",
+                    "target": "string"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Search results",
+                    "target": "搜索结果"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Stefano Ferri",
+                    "target": "斯特凡诺·费里"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Claude Desktop Extension",
+                    "target": "Claude 桌面扩展"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "rung",
+                    "source": "middleware",
+                    "target": "middleware"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "rung",
+                    "source": "sdk",
+                    "target": "sdk"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "rung",
+                    "source": "deferred",
+                    "target": "延迟"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "null",
+                    "target": "null"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Heading not found: ${n.target}",
+                    "target": "未找到标题：${n.target}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Heading \"${n.target}\" is a level-${v} heading with no level-1 (#) parent, while the document does contain an H1 elsewhere — the section boundary is ambiguous. Refusing to patch. Pass allowRootHeadings:true to target it explicitly, or createTargetIfMissing:true to bypass. (Files with no H1 at all are accepted automatically.)",
+                    "target": "标题 \"${n.target}\" 是一个级别为-${v} 的标题，且没有级别为-1（#）的父标题，而文档其他位置包含 H1 —— 区段边界不明确。拒绝修补。请传入 allowRootHeadings:true 显式定位，或创建 createTargetIfMissing:true 以绕过。（完全不包含 H1 的文件会自动接受。）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Block not found: ^${o} (unresolved — block may be inside a table, which is not indexed by Obsidian's metadataCache)",
+                    "target": "未找到块：^${o}（未解析 —— 该块可能位于表格内，而 Obsidian 的 metadataCache 不会对表格进行索引）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Block \"^${o}\" resolved to line ${d.startLine+1} but it is inside a markdown table or fenced code block. Refusing to patch — replacing or splicing this region would corrupt the surrounding structure. Move the block id outside the table/code block to make it patchable.",
+                    "target": "块 \"^${o}\" 已解析至第 ${d.startLine+1} 行，但它位于 Markdown 表格或围栏代码块内。拒绝修补 —— 替换或拼接该区域将破坏周围结构。请将块 ID 移至表格/代码块外部以使其可修补。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "string",
+                    "target": "字符串"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "Notice(\"Failed to read the daily note template\")",
+                    "target": "Notice(\"Failed to read the daily note template\")"
+                },
+                {
+                    "source": "Notice(\"Unable to create new file.\")",
+                    "target": "Notice(\"Unable to create new file.\")"
+                },
+                {
+                    "source": "log(`[${MS[e]},${new Date().toISOString()}]${t}`)",
+                    "target": "log(`[${MS[e]},${new Date().toISOString()}]${t}`)"
+                },
+                {
+                    "source": "error(`An uncaught WebGPU validation error was raised: ${s.error.message}`)",
+                    "target": "error(`An uncaught WebGPU validation error was raised: ${s.error.message}`)"
+                },
+                {
+                    "source": "log(`[profiling] kernel \"${s}|${c}|${l}|${o}\" ${g}${v}start time: ${h} ns, execution time: ${m-h} ns`)",
+                    "target": "log(`[profiling] kernel \"${s}|${c}|${l}|${o}\" ${g}${v}start time: ${h} ns, execution time: ${m-h} ns`)"
+                },
+                {
+                    "source": "error(`An error occurred during model execution: \"${n}\".`)",
+                    "target": "error(`An error occurred during model execution: \"${n}\".`)"
+                },
+                {
+                    "source": "log(`[${Jwe[e]},${new Date().toISOString()}]${t}`)",
+                    "target": "log(`[${Jwe[e]},${new Date().toISOString()}]${t}`)"
+                },
+                {
+                    "source": "error(\"an integer in the range Number.MIN_SAFE_INTEGER to Number.MAX_SAFE_INTEGER\")",
+                    "target": "error(\"an integer in the range Number.MIN_SAFE_INTEGER to Number.MAX_SAFE_INTEGER\")"
+                },
+                {
+                    "source": "error(\"a parsable date\")",
+                    "target": "error(\"a parsable date\")"
+                },
+                {
+                    "source": "error(\"a URL string\")",
+                    "target": "error(\"a URL string\")"
+                },
+                {
+                    "source": "Notice(`MCP Connector: ${q}`)",
+                    "target": "Notice(`MCP Connector: ${q}`)"
+                },
+                {
+                    "source": "Notice(`Failed to save command permissions: ${rt}`)",
+                    "target": "Notice(`Failed to save command permissions: ${rt}`)"
+                },
+                {
+                    "source": "Notice(`No '${kt.label}' commands were found in this vault's registry.`)",
+                    "target": "Notice(`No '${kt.label}' commands were found in this vault's registry.`)"
+                },
+                {
+                    "source": "Notice(`All '${kt.label}' commands are already in the allowlist.`)",
+                    "target": "Notice(`All '${kt.label}' commands are already in the allowlist.`)"
+                },
+                {
+                    "source": "Notice(`Added ${Vr} '${kt.label}' command${Vr===1?\"\":\"s\"} to the allowlist.`)",
+                    "target": "Notice(`Added ${Vr} '${kt.label}' command${Vr===1?\"\":\"s\"} to the allowlist.`)"
+                },
+                {
+                    "source": "Notice(`Copied ${w(u).length} command id${w(u).length===1?\"\":\"s\"} to clipboard.`)",
+                    "target": "Notice(`Copied ${w(u).length} command id${w(u).length===1?\"\":\"s\"} to clipboard.`)"
+                },
+                {
+                    "source": "Notice(`Allowlist (copy manually):\n${kt}`)",
+                    "target": "Notice(`Allowlist (copy manually):\n${kt}`)"
+                },
+                {
+                    "source": "Notice(\"Could not access the Obsidian command registry.\")",
+                    "target": "Notice(\"Could not access the Obsidian command registry.\")"
+                },
+                {
+                    "source": "Notice(`Refreshed registry: ${w(m).length} commands found.`)",
+                    "target": "Notice(`Refreshed registry: ${w(m).length} commands found.`)"
+                },
+                {
+                    "source": "Notice(`Removed ${kt} stale command id${kt===1?\"\":\"s\"} from the allowlist.`)",
+                    "target": "Notice(`Removed ${kt} stale command id${kt===1?\"\":\"s\"} from the allowlist.`)"
+                },
+                {
+                    "source": "Notice(`Replaced allowlist with ${kt.length} command id${kt.length===1?\"\":\"s\"}.`)",
+                    "target": "Notice(`Replaced allowlist with ${kt.length} command id${kt.length===1?\"\":\"s\"}.`)"
+                },
+                {
+                    "source": "Notice(`${Rc} index is ready.`)",
+                    "target": "Notice(`${Rc} index is ready.`)"
+                },
+                {
+                    "source": "Notice(\"Rebuild not available yet — reload Obsidian.\")",
+                    "target": "Notice(\"Rebuild not available yet — reload Obsidian.\")"
+                },
+                {
+                    "source": "Notice(\"Semantic index not available yet — reload Obsidian.\")",
+                    "target": "Notice(\"Semantic index not available yet — reload Obsidian.\")"
+                },
+                {
+                    "source": "Notice(\"Rebuilding index in background…\")",
+                    "target": "Notice(\"Rebuilding index in background…\")"
+                },
+                {
+                    "source": "Notice(\"Smart Connections manages its own index.\")",
+                    "target": "Notice(\"Smart Connections manages its own index.\")"
+                },
+                {
+                    "source": "Notice(\"Semantic index rebuilt.\")",
+                    "target": "Notice(\"Semantic index rebuilt.\")"
+                },
+                {
+                    "source": "Notice(`Rebuild failed: ${os}`)",
+                    "target": "Notice(`Rebuild failed: ${os}`)"
+                },
+                {
+                    "source": "error(\"Smart Connections search failed\",{error:c instanceof Error?{name:c.name,message:gP(c.message,l),stack:gP(c.stack??\"\",l)}:gP(String(c),l)}),[]}}},plugin:t};let n=typeof window>\"u\"?void 0:window.SmartSearch;if(!n&&t?.env){let i=t.env;if(typeof i.search===\"function\")",
+                    "target": "error(\"Smart Connections search failed\",{error:c instanceof Error?{name:c.name,message:gP(c.message,l),stack:gP(c.stack??\"\",l)}:gP(String(c),l)}),[]}}},plugin:t};let n=typeof window>\"u\"?void 0:window.SmartSearch;if(!n&&t?.env){let i=t.env;if(typeof i.search===\"function\")"
+                },
+                {
+                    "source": "Notice(`Failed to read tool loading settings: ${os}`)",
+                    "target": "Notice(`Failed to read tool loading settings: ${os}`)"
+                },
+                {
+                    "source": "Notice(`Failed to save tool loading settings: ${jt}`)",
+                    "target": "Notice(`Failed to save tool loading settings: ${jt}`)"
+                },
+                {
+                    "source": "Notice(`Failed to save tool loading settings: ${mr}`)",
+                    "target": "Notice(`Failed to save tool loading settings: ${mr}`)"
+                },
+                {
+                    "source": "Notice(`Failed to promote \"${st}\": ${jt}`)",
+                    "target": "Notice(`Failed to promote \"${st}\": ${jt}`)"
+                },
+                {
+                    "source": "Notice(`Failed to remove \"${st}\": ${jt}`)",
+                    "target": "Notice(`Failed to remove \"${st}\": ${jt}`)"
+                },
+                {
+                    "source": "Notice(\"Adaptive tool data reset.\")",
+                    "target": "Notice(\"Adaptive tool data reset.\")"
+                },
+                {
+                    "source": "Notice(`Failed to reset adaptive tool data: ${Ke}`)",
+                    "target": "Notice(`Failed to reset adaptive tool data: ${Ke}`)"
+                },
+                {
+                    "source": "Notice(`Removed ${lo} note${lo>1?\"s\":\"\"} from the semantic search index.`)",
+                    "target": "Notice(`Removed ${lo} note${lo>1?\"s\":\"\"} from the semantic search index.`)"
+                },
+                {
+                    "source": "Notice(`Hidden folders saved, but the semantic search index could not be purged: ${bs}. Rebuild it from Semantic Search settings.`)",
+                    "target": "Notice(`Hidden folders saved, but the semantic search index could not be purged: ${bs}. Rebuild it from Semantic Search settings.`)"
+                },
+                {
+                    "source": "Notice(`Failed to save hidden folders: ${ws}`)",
+                    "target": "Notice(`Failed to save hidden folders: ${ws}`)"
+                },
+                {
+                    "source": "Notice(`Failed to save hidden folders: ${lo}`)",
+                    "target": "Notice(`Failed to save hidden folders: ${lo}`)"
+                },
+                {
+                    "source": "Notice(`Failed to save MCP Tools settings: ${en}`)",
+                    "target": "Notice(`Failed to save MCP Tools settings: ${en}`)"
+                },
+                {
+                    "source": "log(\"Received ping:\",a.params),{})),this.setEventHandler(\"hostcontextchanged\",void 0)}buildContext(e){return e}registerAppCapabilities(e){if(this.transport)throw Error(\"Cannot register capabilities after transport is established\")",
+                    "target": "log(\"Received ping:\",a.params),{})),this.setEventHandler(\"hostcontextchanged\",void 0)}buildContext(e){return e}registerAppCapabilities(e){if(this.transport)throw Error(\"Cannot register capabilities after transport is established\")"
+                },
+                {
+                    "source": "error(\"openLink threw for \"+a,y),El(a,u)}}return u.addEventListener(\"click\",b),u.addEventListener(\"keydown\",(v)=>{if(v.key===\"Enter\"||v.key===\" \")",
+                    "target": "error(\"openLink threw for \"+a,y),El(a,u)}}return u.addEventListener(\"click\",b),u.addEventListener(\"keydown\",(v)=>{if(v.key===\"Enter\"||v.key===\" \")"
+                },
+                {
+                    "source": "Notice(`MCP Connector: \"${u}\" promoted to active`)",
+                    "target": "Notice(`MCP Connector: \"${u}\" promoted to active`)"
+                },
+                {
+                    "source": "error(\"MCP Connector failed to start HTTP server\",{error:n}),{success:!1,error:n}}}async function wF(e){await Pve(e.server),It.info(\"MCP Connector HTTP server stopped\",{port:e.server.port}),await uye(e.mcp)}var iv=require(\"obsidian\")",
+                    "target": "error(\"MCP Connector failed to start HTTP server\",{error:n}),{success:!1,error:n}}}async function wF(e){await Pve(e.server),It.info(\"MCP Connector HTTP server stopped\",{port:e.server.port}),await uye(e.mcp)}var iv=require(\"obsidian\")"
+                },
+                {
+                    "source": "Notice(`Node.js ${mt.version} installed via Homebrew.`)",
+                    "target": "Notice(`Node.js ${mt.version} installed via Homebrew.`)"
+                },
+                {
+                    "source": "Notice(`Homebrew install failed: ${mt.error}`)",
+                    "target": "Notice(`Homebrew install failed: ${mt.error}`)"
+                },
+                {
+                    "source": "Notice(`Homebrew install failed: ${Mt}`)",
+                    "target": "Notice(`Homebrew install failed: ${Mt}`)"
+                },
+                {
+                    "source": "Notice(\"mcp-remote pre-warmed.\")",
+                    "target": "Notice(\"mcp-remote pre-warmed.\")"
+                },
+                {
+                    "source": "Notice(`Pre-warm failed: ${mt.error}`)",
+                    "target": "Notice(`Pre-warm failed: ${mt.error}`)"
+                },
+                {
+                    "source": "Notice(`Copy failed: ${me}`)",
+                    "target": "Notice(`Copy failed: ${me}`)"
+                },
+                {
+                    "source": "Notice(`Copy failed: ${J}`)",
+                    "target": "Notice(`Copy failed: ${J}`)"
+                },
+                {
+                    "source": "Notice(`Export ${OE} with this token before starting Claude Code. It asks you to approve a project .mcp.json once.`)",
+                    "target": "Notice(`Export ${OE} with this token before starting Claude Code. It asks you to approve a project .mcp.json once.`)"
+                },
+                {
+                    "source": "Notice(`Failed to generate .mcpb: ${ge}`)",
+                    "target": "Notice(`Failed to generate .mcpb: ${ge}`)"
+                },
+                {
+                    "source": "Notice(`The Codex entry '${w(r)}' in ${T.configPath} is already up to date.`)",
+                    "target": "Notice(`The Codex entry '${w(r)}' in ${T.configPath} is already up to date.`)"
+                },
+                {
+                    "source": "Notice(`Failed to save tool loading settings: ${g}`)",
+                    "target": "Notice(`Failed to save tool loading settings: ${g}`)"
+                },
+                {
+                    "source": "Notice(`MCP Connector: ${xt} failed — ${an}`+(cn?` A backup was saved at ${cn}.`:\"\"))}async function jt(){if(w(_)||w(o).length>=xR)return;re(_,!0);try{let xt=await hye(s(),\"New client\");await Kt(),a(xt.id),re(h,xt.id),re(m,xt.label),new iv.Notice(`Token \"${xt.label}\" added.`)",
+                    "target": "Notice(`MCP Connector: ${xt} failed — ${an}`+(cn?` A backup was saved at ${cn}.`:\"\"))}async function jt(){if(w(_)||w(o).length>=xR)return;re(_,!0);try{let xt=await hye(s(),\"New client\");await Kt(),a(xt.id),re(h,xt.id),re(m,xt.label),new iv.Notice(`Token \"${xt.label}\" added.`)"
+                },
+                {
+                    "source": "Notice(`Token \"${xt.label}\" revoked, but a managed client entry could not be removed: ${an.error}`)",
+                    "target": "Notice(`Token \"${xt.label}\" revoked, but a managed client entry could not be removed: ${an.error}`)"
+                },
+                {
+                    "source": "Notice(`MCP Connector: failed to restart — ${an.error}`)",
+                    "target": "Notice(`MCP Connector: failed to restart — ${an.error}`)"
+                },
+                {
+                    "source": "Notice(`MCP Connector: failed to save port — ${Wt}`)",
+                    "target": "Notice(`MCP Connector: failed to save port — ${Wt}`)"
+                },
+                {
+                    "source": "Notice(`MCP Connector: failed to restart — ${Wt.error}`)",
+                    "target": "Notice(`MCP Connector: failed to restart — ${Wt.error}`)"
+                },
+                {
+                    "source": "Notice(\"Server name saved.\")",
+                    "target": "Notice(\"Server name saved.\")"
+                },
+                {
+                    "source": "Notice(`MCP Connector: failed to save server name — ${Wt}`)",
+                    "target": "Notice(`MCP Connector: failed to save server name — ${Wt}`)"
+                },
+                {
+                    "source": "Notice(\"Claude Desktop config sync disabled.\")",
+                    "target": "Notice(\"Claude Desktop config sync disabled.\")"
+                },
+                {
+                    "source": "Notice(`claude_desktop_config.json now uses \"${xt.label}\".`)",
+                    "target": "Notice(`claude_desktop_config.json now uses \"${xt.label}\".`)"
+                },
+                {
+                    "source": "Notice(\"Sync enabled, but the MCP transport is not running yet.\")",
+                    "target": "Notice(\"Sync enabled, but the MCP transport is not running yet.\")"
+                },
+                {
+                    "source": "Notice(\"Sync enabled, but this vault's location change has to be resolved first.\")",
+                    "target": "Notice(\"Sync enabled, but this vault's location change has to be resolved first.\")"
+                },
+                {
+                    "source": "Notice(`Sync enabled, but the write failed: ${an.error}`)",
+                    "target": "Notice(`Sync enabled, but the write failed: ${an.error}`)"
+                },
+                {
+                    "source": "Notice(\"Sync enabled.\")",
+                    "target": "Notice(\"Sync enabled.\")"
+                },
+                {
+                    "source": "Notice(`MCP Connector: The broker route starts once the MCP transport runs on a port other than ${Ow}`)",
+                    "target": "Notice(`MCP Connector: The broker route starts once the MCP transport runs on a port other than ${Ow}`)"
+                },
+                {
+                    "source": "Notice(`This vault is now independent. ${an.join(\". \")}`)",
+                    "target": "Notice(`This vault is now independent. ${an.join(\". \")}`)"
+                },
+                {
+                    "source": "Notice(`Copy failed: ${cn}`)",
+                    "target": "Notice(`Copy failed: ${cn}`)"
+                },
+                {
+                    "source": "Notice(`Failed to save the log level: ${D}`)",
+                    "target": "Notice(`Failed to save the log level: ${D}`)"
+                },
+                {
+                    "source": "Notice(`The diagnostic log is at ${s}`)",
+                    "target": "Notice(`The diagnostic log is at ${s}`)"
+                },
+                {
+                    "source": "Notice(`Failed to copy the log: ${E}`)",
+                    "target": "Notice(`Failed to copy the log: ${E}`)"
+                },
+                {
+                    "source": "Notice(\"Diagnostic log cleared.\")",
+                    "target": "Notice(\"Diagnostic log cleared.\")"
+                },
+                {
+                    "source": "Notice(`Failed to clear the log: ${E}`)",
+                    "target": "Notice(`Failed to clear the log: ${E}`)"
+                },
+                {
+                    "source": "Notice(`MCP Connector: This vault's fixed port ${Ow} is reserved for the shared broker, so client configs that use the broker cannot connect to any open vault. Change the fixed port in Access Control`)",
+                    "target": "Notice(`MCP Connector: This vault's fixed port ${Ow} is reserved for the shared broker, so client configs that use the broker cannot connect to any open vault. Change the fixed port in Access Control`)"
+                },
+                {
+                    "source": "name:\"Reshape (packed)\"",
+                    "target": "name:\"Reshape (packed)\""
+                },
+                {
+                    "source": "name:\"Concat (packed)\"",
+                    "target": "name:\"Concat (packed)\""
+                },
+                {
+                    "source": "name:\"MatMul (packed)\"",
+                    "target": "name:\"MatMul (packed)\""
+                },
+                {
+                    "source": "name=\"Svelte error\"",
+                    "target": "name=\"Svelte error\""
+                },
+                {
+                    "source": "description:`Morph ${e}`",
+                    "target": "description:`Morph ${e}`"
+                },
+                {
+                    "source": "description:`Predicate ${this.expression}`",
+                    "target": "description:`Predicate ${this.expression}`"
+                },
+                {
+                    "source": "description:\"an integer string representing a safe Unix timestamp\"",
+                    "target": "description:\"an integer string representing a safe Unix timestamp\""
+                },
+                {
+                    "source": "description=\"a generic type that instantiates an object from a single index signature and corresponding value type\"",
+                    "target": "description=\"a generic type that instantiates an object from a single index signature and corresponding value type\""
+                },
+                {
+                    "source": "description:\"Common text-formatting and list commands\"",
+                    "target": "description:\"Common text-formatting and list commands\""
+                },
+                {
+                    "source": "description:\"Pane splits, tab navigation, graph view\"",
+                    "target": "description:\"Pane splits, tab navigation, graph view\""
+                },
+                {
+                    "source": "description:\"Quick switcher, global search, file reveal\"",
+                    "target": "description:\"Quick switcher, global search, file reveal\""
+                },
+                {
+                    "source": "name:\"Smart Connections\"",
+                    "target": "name:\"Smart Connections\""
+                },
+                {
+                    "source": "text:`Heading not found: ${n.target}`",
+                    "target": "text:`Heading not found: ${n.target}`"
+                },
+                {
+                    "source": "text:`Block not found: ^${o} (unresolved — block may be inside a table, which is not indexed by Obsidian's metadataCache)`",
+                    "target": "text:`Block not found: ^${o} (unresolved — block may be inside a table, which is not indexed by Obsidian's metadataCache)`"
+                },
+                {
+                    "source": "text:`Block \"^${o}\" resolved to line ${d.startLine+1} but it is inside a markdown table or fenced code block. Refusing to patch — replacing or splicing this region would corrupt the surrounding structure. Move the block id outside the table/code block to make it patchable.`",
+                    "target": "text:`Block \"^${o}\" resolved to line ${d.startLine+1} but it is inside a markdown table or fenced code block. Refusing to patch — replacing or splicing this region would corrupt the surrounding structure. Move the block id outside the table/code block to make it patchable.`"
+                },
+                {
+                    "source": "text:`URI: ${t}`",
+                    "target": "text:`URI: ${t}`"
+                },
+                {
+                    "source": "textContent=\"Loading search results…\"",
+                    "target": "textContent=\"Loading search results…\""
+                },
+                {
+                    "source": "textContent=\"score \"",
+                    "target": "textContent=\"score \""
+                },
+                {
+                    "source": "textContent=\"line \"",
+                    "target": "textContent=\"line \""
+                },
+                {
+                    "source": "textContent=\"Showing \"",
+                    "target": "textContent=\"Showing \""
+                },
+                {
+                    "source": "textContent=\"Connected. Waiting for search results…\"",
+                    "target": "textContent=\"Connected. Waiting for search results…\""
+                },
+                {
+                    "source": "name:\"Search results\"",
+                    "target": "name:\"Search results\""
+                },
+                {
+                    "source": "description:\"Ranked list view for search_vault_smart and search_vault_simple\"",
+                    "target": "description:\"Ranked list view for search_vault_smart and search_vault_simple\""
+                },
+                {
+                    "source": "name = \"AbortError\"",
+                    "target": "name = \"AbortError\""
+                },
+                {
+                    "source": "description:\"Access your Obsidian vault (semantic search, notes, Templater prompts) via MCP.\"",
+                    "target": "description:\"Access your Obsidian vault (semantic search, notes, Templater prompts) via MCP.\""
+                },
+                {
+                    "source": "name:\"Stefano Ferri\"",
+                    "target": "name:\"Stefano Ferri\""
+                },
+                {
+                    "source": "name:\"Claude Desktop Extension\"",
+                    "target": "name:\"Claude Desktop Extension\""
+                },
+                {
+                    "source": "text: \"+t,pipelineFactory:AOe(e),batchSize:4})}function COe(e){return cG({modelId:\"",
+                    "target": "text: \"+t,pipelineFactory:AOe(e),batchSize:4})}function COe(e){return cG({modelId:\""
+                }
+            ]
+        }
+    }
+}
