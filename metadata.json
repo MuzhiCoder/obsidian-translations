@@ -50,5 +50,18 @@
         "created_at": "2026-10-29T10:59:19.072Z",
         "updated_at": "2026-10-29T10:59:19.072Z",
         "type": "plugin"
+    },
+    {
+        "id": "bu-NGCv9yiGQHAwy1OU_cu8LCpNKOLB6",
+        "plugin": "hearth",
+        "language": "zh-cn",
+        "version": "3.5.0",
+        "supported_versions": "3.5.0",
+        "title": "Hearth",
+        "description": "Hearth Localization & Tweaks",
+        "hash": "77e3f61377e3f61377e3f61377e3f613",
+        "created_at": "2026-10-29T10:59:40.289Z",
+        "updated_at": "2026-10-29T10:59:40.289Z",
+        "type": "plugin"
     }
 ]
