@@ -128,5 +128,18 @@
         "created_at": "2026-10-29T11:00:20.746Z",
         "updated_at": "2026-10-29T11:00:20.746Z",
         "type": "plugin"
+    },
+    {
+        "id": "YP-9_qkYwkZHIjQvC1vtozffF7Lup_VK",
+        "plugin": "operon",
+        "language": "zh-cn",
+        "version": "4.3.0",
+        "supported_versions": "4.3.0",
+        "title": "Operon",
+        "description": "Operon Localization & Tweaks",
+        "hash": "4b1bcdfb4b1bcdfb4b1bcdfb4b1bcdfb",
+        "created_at": "2026-10-29T11:00:27.668Z",
+        "updated_at": "2026-10-29T11:00:27.668Z",
+        "type": "plugin"
     }
 ]
