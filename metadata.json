@@ -76,5 +76,18 @@
         "created_at": "2026-10-29T10:59:48.549Z",
         "updated_at": "2026-10-29T10:59:48.549Z",
         "type": "plugin"
+    },
+    {
+        "id": "51KaXrgelBerccxP1owUw56wuYHp84C4",
+        "plugin": "metaedit",
+        "language": "zh-cn",
+        "version": "1.11.0",
+        "supported_versions": "1.11.0",
+        "title": "MetaEdit",
+        "description": "MetaEdit Localization & Tweaks",
+        "hash": "43bdb6ce43bdb6ce43bdb6ce43bdb6ce",
+        "created_at": "2026-10-29T10:59:55.732Z",
+        "updated_at": "2026-10-29T10:59:55.732Z",
+        "type": "plugin"
     }
 ]
